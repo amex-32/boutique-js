@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077 - Panier</title>
+    <link rel="stylesheet" href="static/css/cart.css">
+    <link rel="stylesheet" href="static/css/common.css">
+</head>
+<body data-page="cart">
+<header class="site-header">
+    <a class="brand-mark" href="index.html"><h1>CyberPunk 2077</h1></a>
+    <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="about.html">A Propos</a>
+    </nav>
+    <div class="header-actions">
+        <a class="icon-button" href="connection.html" aria-label="Connexion">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 20a8 8 0 0 1 16 0"></path>
+            </svg>
+        </a>
+        <a class="icon-button" href="catalogue.html" aria-label="Rechercher">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="6"></circle>
+                <path d="M20 20l-4.2-4.2"></path>
+            </svg>
+        </a>
+        <button class="icon-button theme-toggle" type="button" aria-label="Changer le theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18"></path>
+                <path d="M12 3a9 9 0 1 0 0 18"></path>
+            </svg>
+        </button>
+        <a class="icon-button" href="catalogue.html?view=favorites" aria-label="Favoris">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20.5l-7.2-7.1a4.6 4.6 0 0 1 6.5-6.5L12 7.6l0.7-0.7a4.6 4.6 0 1 1 6.5 6.5z"></path>
+            </svg>
+            <span class="favorite-count" data-favorite-count>0</span>
+        </a>
+        <a class="icon-button cart-link" href="cart.html" aria-label="Panier">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="9" cy="19" r="1.5"></circle>
+                <circle cx="17" cy="19" r="1.5"></circle>
+                <path d="M3 5h2l2.3 9h9.7l2-7H7.3"></path>
+            </svg>
+            <span class="cart-count" data-cart-count>0</span>
+        </a>
+    </div>
+</header>
+
+<main class="cart-page">
+    <section class="cart-hero">
+        <p class="eyebrow">// PANIER</p>
+        <h2>Previsualise ta flotte avant validation</h2>
+    </section>
+
+    <section class="cart-layout">
+        <div class="cart-items" id="cartItems"></div>
+        <aside class="cart-summary">
+            <h3>Resume</h3>
+            <div class="delivery-form">
+                <h4>Livraison</h4>
+                <div class="saved-addresses-section">
+                    <select id="savedAddressSelect" class="address-select">
+                        <option value="">Adresse sauvegardée</option>
+                    </select>
+                    <button type="button" id="loadAddressButton" class="load-address-btn">Utiliser</button>
+                </div>
+                <input id="customerName" type="text" placeholder="Nom complet">
+                <input id="addressLine1" type="text" placeholder="Adresse">
+                <input id="addressLine2" type="text" placeholder="Complement d'adresse">
+                <div class="form-row">
+                    <input id="postalCode" type="text" placeholder="Code postal">
+                    <input id="city" type="text" placeholder="Ville">
+                </div>
+                <input id="country" type="text" placeholder="Pays">
+                <label class="remember-address">
+                    <input style="width: 20px; height: 20px; margin: 0 20px 0 10px" id="rememberAddress" type="checkbox" checked>
+                    <span>Retenir cette adresse</span>
+                </label>
+            </div>
+            <div class="summary-row">
+                <span>Vehicules</span>
+                <strong id="summaryCount">0</strong>
+            </div>
+            <div class="summary-row">
+                <span>Sous-total</span>
+                <strong id="summarySubtotal">¥0</strong>
+            </div>
+            <div class="summary-row">
+                <span>Promotions</span>
+                <strong id="summaryDiscount">-¥0</strong>
+            </div>
+            <div class="summary-row total-row">
+                <span>Total</span>
+                <strong id="summaryTotal">¥0</strong>
+            </div>
+            <button class="checkout-link" id="checkoutButton" type="button">Passer la commande</button>
+            <a class="secondary-link" href="catalogue.html">Continuer mes achats</a>
+            <p class="checkout-status" id="checkoutStatus"></p>
+        </aside>
+    </section>
+</main>
+
+<script src="js/shared.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

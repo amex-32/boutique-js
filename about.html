@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077 - A Propos</title>
+    <link rel="stylesheet" href="static/css/about.css">
+    <link rel="stylesheet" href="static/css/common.css">
+</head>
+<body data-page="about">
+<header class="site-header">
+    <a class="brand-mark" href="index.html"><h1>CyberPunk 2077</h1></a>
+    <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="about.html" aria-current="page">A Propos</a>
+    </nav>
+    <div class="header-actions">
+        <a class="icon-button" href="connection.html" aria-label="Connexion">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 20a8 8 0 0 1 16 0"></path>
+            </svg>
+        </a>
+        <a class="icon-button" href="catalogue.html" aria-label="Rechercher">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="6"></circle>
+                <path d="M20 20l-4.2-4.2"></path>
+            </svg>
+        </a>
+        <button class="icon-button theme-toggle" type="button" aria-label="Changer le theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18"></path>
+                <path d="M12 3a9 9 0 1 0 0 18"></path>
+            </svg>
+        </button>
+        <a class="icon-button" href="catalogue.html?view=favorites" aria-label="Favoris">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20.5l-7.2-7.1a4.6 4.6 0 0 1 6.5-6.5L12 7.6l0.7-0.7a4.6 4.6 0 1 1 6.5 6.5z"></path>
+            </svg>
+            <span class="favorite-count" data-favorite-count>0</span>
+        </a>
+        <a class="icon-button cart-link" href="cart.html" aria-label="Panier">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="9" cy="19" r="1.5"></circle>
+                <circle cx="17" cy="19" r="1.5"></circle>
+                <path d="M3 5h2l2.3 9h9.7l2-7H7.3"></path>
+            </svg>
+            <span class="cart-count" data-cart-count>0</span>
+        </a>
+    </div>
+</header>
+
+<main class="about-page">
+    <section class="intro">
+        <p class="eyebrow">// A PROPOS</p>
+        <h2>Un garage premium inspire de l'univers Cyberpunk</h2>
+        <p>Cette boutique met en scene une selection de vehicules de Night City avec galerie dynamique, variantes de couleurs et panier persistant.</p>
+    </section>
+
+    <section class="about-grid">
+        <article>
+            <h3>Direction visuelle</h3>
+            <p>Le site conserve ton langage graphique sombre, tranche jaune et cartes techniques, avec une declinaison claire disponible via le bouton de theme.</p>
+        </article>
+        <article>
+            <h3>Catalogue</h3>
+            <p>Chaque vehicule remonte depuis l'API avec ses variantes et ses sprites reeles pour afficher une fiche detaillee plus riche.</p>
+        </article>
+        <article>
+            <h3>Experience</h3>
+            <p>L'index sert de vitrine rapide, le catalogue sert au parcours d'achat, et le panier reste disponible sur toutes les pages.</p>
+        </article>
+    </section>
+
+    <section class="timeline">
+        <div>
+            <span>01</span>
+            <h4>Selection</h4>
+            <p>Choisis un modele, une couleur et inspecte ses sprites.</p>
+        </div>
+        <div>
+            <span>02</span>
+            <h4>Ajout panier</h4>
+            <p>Ajoute le vehicule directement depuis une carte ou une fiche detail.</p>
+        </div>
+        <div>
+            <span>03</span>
+            <h4>Validation</h4>
+            <p>Retrouve tous les vehicules choisis dans la page panier.</p>
+        </div>
+    </section>
+
+    <section class="project-timeline">
+        <h3>Suivi du Projet</h3>
+        <div class="team-contributions">
+            <div class="contributor-track">
+                <h4>Backend & Base de donnees</h4>
+                <div class="steps-list">
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Architecture API</strong>
+                            <p>Mise en place de l'API REST pour la gestion des vehicules et des commandes</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Base de donnees</strong>
+                            <p>Creation et gestion de la base de donnees avec les schemas vehicules, variantes et commandes</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Endpoints</strong>
+                            <p>Developpement des endpoints pour recuperer les catalogues, details vehicules et gerer le panier</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contributor-track">
+                <h4>Assets & Images</h4>
+                <div class="steps-list">
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Recuperation des images</strong>
+                            <p>Collection et organisation de toutes les images des vehicules de Night City</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Sprites & Variantes</strong>
+                            <p>Gestion des differentes sprites et coloris pour chaque modele vehicule</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Optimisation assets</strong>
+                            <p>Preparation et optimisation des images pour affichage web optimal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contributor-track full-width">
+                <h4>Frontend Repartage</h4>
+                <div class="steps-list">
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Structure HTML & CSS</strong>
+                            <p>Creation des templates et stylisation theme cyberpunk sombre/clair</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Pages principales</strong>
+                            <p>Developpement des pages: accueil, catalogue, fiche vehicule, panier</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Logique client</strong>
+                            <p>Gestion du panier persistant, favoris, recherche et filtrages dynamiques</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Galerie & Carousel</strong>
+                            <p>Carousel des sprites avec synchronisation des miniatures et navigation intuitive</p>
+                        </div>
+                    </div>
+                    <div class="step-item completed">
+                        <span class="step-number">✓</span>
+                        <div>
+                            <strong>Formulaire livraison</strong>
+                            <p>Formulaire adresse avec sauvegarde et affichage resume commande</p>
+                        </div>
+                    </div>
+                    <div class="step-item note">
+                        <span class="step-number">⚠</span>
+                        <div>
+                            <strong>Comportement recherche</strong>
+                            <p>Recherche non valide dans la barre affiche la page 404 (comportement attendu)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="js/shared.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

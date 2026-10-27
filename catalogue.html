@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077 - Catalogue</title>
+    <link rel="stylesheet" href="static/css/catalogue.css">
+    <link rel="stylesheet" href="static/css/common.css">
+</head>
+<body data-page="catalogue">
+<header class="site-header">
+    <a class="brand-mark" href="index.html"><h1>CyberPunk 2077</h1></a>
+    <nav class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html" aria-current="page">Catalogue</a>
+        <a href="about.html">A Propos</a>
+    </nav>
+    <div class="header-actions">
+        <a class="icon-button" href="connection.html" aria-label="Connexion">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 20a8 8 0 0 1 16 0"></path>
+            </svg>
+        </a>
+        <a class="icon-button" href="catalogue.html" aria-label="Rechercher">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="6"></circle>
+                <path d="M20 20l-4.2-4.2"></path>
+            </svg>
+        </a>
+        <button class="icon-button theme-toggle" type="button" aria-label="Changer le theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18"></path>
+                <path d="M12 3a9 9 0 1 0 0 18"></path>
+            </svg>
+        </button>
+        <a class="icon-button" href="catalogue.html?view=favorites" aria-label="Favoris">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20.5l-7.2-7.1a4.6 4.6 0 0 1 6.5-6.5L12 7.6l0.7-0.7a4.6 4.6 0 1 1 6.5 6.5z"></path>
+            </svg>
+            <span class="favorite-count" data-favorite-count>0</span>
+        </a>
+        <a class="icon-button cart-link" href="cart.html" aria-label="Panier">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="9" cy="19" r="1.5"></circle>
+                <circle cx="17" cy="19" r="1.5"></circle>
+                <path d="M3 5h2l2.3 9h9.7l2-7H7.3"></path>
+            </svg>
+            <span class="cart-count" data-cart-count>0</span>
+        </a>
+    </div>
+</header>
+
+<main class="catalogue-page">
+    <section class="catalogue-hero">
+        <p class="eyebrow">// CATALOGUE COMPLET</p>
+        <h2>Choisis le vehicule qui correspond a ton style de conduite</h2>
+        <p>Recherche, trie et ajoute directement les modeles au panier depuis cette page.</p>
+    </section>
+
+    <section class="catalogue-toolbar">
+        <div class="search-shell">
+            <input id="catalogSearch" type="search" placeholder="Rechercher un modele, un constructeur ou une couleur">
+        </div>
+        <select id="sortSelect">
+            <option value="default">Tri par defaut</option>
+            <option value="price-asc">Prix croissant</option>
+            <option value="price-desc">Prix decroissant</option>
+            <option value="name-asc">Nom A-Z</option>
+        </select>
+    </section>
+
+    <section class="catalogue-grid" id="catalogueGrid"></section>
+</main>
+
+<script src="js/shared.js"></script>
+<script src="js/catalogue.js"></script>
+</body>
+</html>
