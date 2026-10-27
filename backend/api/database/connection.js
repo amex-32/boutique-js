@@ -5,7 +5,8 @@ const dbConfig = {
     user: process.env.DB_USER || 'root',
     password: process.env.DB_PASSWORD || 'root',
     database: process.env.DB_NAME || 'boutique',
-    port: Number(process.env.DB_PORT) || 8889
+    port: Number(process.env.DB_PORT) || 8889,
+    ssl: process.env.DB_SSL ? { rejectUnauthorized: true } : undefined
 };
 
 const connexion = mysql.createConnection(dbConfig);

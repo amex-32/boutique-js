@@ -33,6 +33,6 @@ app.use((req, res) => {
 });
 
 // Lancer le serveur sur le port 8080
-app.listen(8080, () => {
-    console.log('Serveur lancé sur le port 8080');
+app.listen(process.env.PORT || 8080, () => {
+    console.log('Serveur lancé');
 });
